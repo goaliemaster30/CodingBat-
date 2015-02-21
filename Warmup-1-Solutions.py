@@ -4,7 +4,6 @@ if we are on vacation. We sleep in if it is not a weekday or we're on vacation.
 Return True if we sleep in.'''
 
 def sleep_in(weekday, vacation):
-
   if not weekday and vacation:
     return True
   elif weekday and not vacation:
@@ -18,7 +17,6 @@ if each is smiling. We are in trouble if they are both smiling or if neither of 
 is smiling. Return True if we are in trouble.'''
 
 def monkey_trouble(a_smile, b_smile):
-
   if a_smile and b_smile:
     return True
   elif not a_smile and not b_smile:
@@ -34,7 +32,8 @@ def sum_double(a, b):
   if a == b:
     sum = sum * 2
   return sum
- # diff21
+  
+# diff21
 ''' Given an int n, return the absolute difference between n and 21,
 except return double the absolute difference if n is over 21. '''
 
@@ -54,6 +53,7 @@ def parrot_trouble(talking, hour):
      return True
   else:
      return False
+
 # makes10
 '''Given 2 ints, a and b, return True if one if them is 10 or if their sum is 10.'''
 
@@ -67,7 +67,6 @@ def makes10(a, b):
 '''Given an int n, return True if it is within 10 of 100 or 200. Note: abs(num)
 computes the absolute value of a number.'''
 def near_hundred(n):
-
   if abs(n-100) <= 10 or abs(n-200) <= 10:
     return True
   else:
